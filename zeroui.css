@@ -1,0 +1,53 @@
+/*
+zeroUI 
+ui library for my userstyles
+
+license: MIT
+author: woidzero
+github: https://github.com/woidzero/zeroUI
+version: 1.0.0
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --bg: #090909;
+  --box-0: #0e0e0e;
+  --box-1: #151515;
+  --box-2: #151515;
+  --box-3: #1a1a1a;
+  --box-4: #2a2a2a;
+  --box-5: #3d3d3d;
+  --box-6: #4f4f4f;
+  --box-7: #666;
+  --box-info: #2292d229;
+  --box-info-border: #4794bb;
+  --box-error: #d2222229;
+  --box-error-border: #bb4747;
+  --box-success: #22d23129;
+  --box-success-border: #47bb4b;
+  --border-radius-0: 4px;
+  --border-radius-1: 8px;
+  --border-radius-2: 16px;
+  --text-header: #fff;
+  --text-primary: #eee;
+  --text-secondary: #848484;
+  --text-subtitle: #a8a8a8;
+  --button-1: #1c1c1c;
+  --button-active: #fff;
+  --button-hover: #373737;
+  --button-text: #151515;
+  --button-border-radius: 12px;
+  --font: "Inter", sans-serif;
+}
+
+html,
+body {
+  scrollbar-color: var(--scrollbar-track) var(--scrollbar-thumb) !important;
+  scrollbar-width: thin !important;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box !important;
+  transition: 0.3s color ease-in-out, 0.3s background-color ease-in-out, 0.3s border ease-in-out, 0.3s display ease-in-out !important;
+}
