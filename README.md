@@ -4,12 +4,16 @@ ui library for my userstyles
 
 ## usage
 
+using my own cdn:
+
 ```css
-@import url('https://cdn.jsdelivr.net/gh/woidzero/zeroUI/zeroui.min.css');
+@import url('https://looksmaxxing.ru/cdn/zeroui.css');
 ```
 
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/woidzero/zeroUI/zeroui.min.css">
+using jsdelivr:
+
+```css
+@import url('https://cdn.jsdelivr.net/gh/woidzero/zeroUI@latest/zeroui.min.css');
 ```
 
 ## license
