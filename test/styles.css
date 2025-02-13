@@ -1,0 +1,106 @@
+@import url("../zeroui.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 60px;
+  font-family: var(--zui-font-primary);
+  background-color: var(--zui-box-0);
+}
+
+code {
+  font-family: var(--zui-font-mono);
+  font-size: 20px;
+}
+
+.box {
+  color: var(--zui-fg-primary);
+  border-radius: var(--zui-br-8);
+  padding: 20px 25px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+.boxes {
+  display: inline-flex;
+  width: 100%;
+  gap: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: var(--zui-br-8);
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  border-color: var(--zui-btn-primary-br);
+  background-color: var(--zui-btn-primary-bg);
+  color: var(--zui-btn-primary-fg);
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  border-color: var(--zui-btn-primary-br-hover);
+  background-color: var(--zui-btn-primary-bg-hover);
+}
+
+.btn-second {
+  background-color: var(--zui-btn-second-bg);
+  color: var(--zui-btn-second-fg);
+  text-decoration: none;
+}
+
+.btn-second:hover {
+  background-color: var(--zui-btn-second-bg-hover);
+}
+
+.box-default {
+  background-color: var(--zui-box-1);
+  border: 1px solid var(--zui-box-4);
+}
+
+.error-box {
+  background-color: var(--zui-error-box);
+  border: 1px solid var(--zui-error);
+}
+
+.warn-box {
+  background-color: var(--zui-warn-box);
+  border: 1px solid var(--zui-warn);
+}
+
+.success-box {
+  background-color: var(--zui-success-box);
+  border: 1px solid var(--zui-success);
+}
+
+.info-box {
+  background-color: var(--zui-info-box);
+  border: 1px solid var(--zui-info);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 10px;
+}
+
+.box p {
+  color: var(--zui-fg-muted);
+}

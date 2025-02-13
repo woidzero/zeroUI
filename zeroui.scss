@@ -1,59 +1,91 @@
 /*
-zeroUI 
-ui library for my userstyles
+zeroUI
+ui library for my userstyles 
 
 license: MIT
 author: woidzero
 github: https://github.com/woidzero/zeroUI
-version: 1.0.2
+version: 1.2.0
 */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://api.fonts.coollabs.io/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 :root {
-  --box-0: #090909;
-  --box-1: #0e0e0e;
-  --box-2: #151515;
-  --box-3: #151515;
-  --box-4: #1a1a1a;
-  --box-5: #2a2a2a;
-  --box-6: #3d3d3d;
-  --box-7: #4f4f4f;
-  --box-8: #666666;
+  /* Boxes */
+    /* Box (default) */
+    --zui-box-0: #090909;
+    --zui-box-1: #0e0e0e;
+    --zui-box-2: #151515;
+    --zui-box-3: #151515;
+    --zui-box-4: #1a1a1a;
+    --zui-box-5: #2a2a2a;
+    --zui-box-6: #3d3d3d;
+    --zui-box-7: #4f4f4f;
+    --zui-box-8: #666666;
 
-  --box-info: #2292d229;
-  --box-info-border: #4794bb;
+    /* Box (info) */
+    --zui-info: #51a0d4;
+    --zui-info-box: rgba(77, 139, 255, 0.1);
 
-  --box-error: #d2222229;
-  --box-error-border: #bb4747;
+    /* Box (success) */
+    --zui-success: #51dd56;
+    --zui-success-box: rgba(71, 187, 75, 0.1);
 
-  --box-success: #22d23129;
-  --box-success-border: #47bb4b;
+    /* Box (error) */
+    --zui-error: #da3f3f;
+    --zui-error-box: rgba(255, 68, 68, 0.1);
 
-  --box-warn: #d2b22229;
-  --box-warn-border: #dfbe55;
+    /* Box (warn) */
+    --zui-warn: #ffdf52;
+    --zui-warn-box: rgba(255, 200, 48, 0.1);
 
-  --br-4: 4px;
-  --br-8: 8px;
-  --br-16: 16px;
-  --br-24: 24px;
+  /* Buttons */
+    /* Button (primary) */
+    --zui-btn-primary-bg: #151515;
+    --zui-btn-primary-br: #3d3d3d;
+    --zui-btn-primary-fg: #eee;
+    --zui-btn-primary-bg-hover: #1a1a1a;
+    --zui-btn-primary-br-hover: #666666;
 
-  --text: #eee;
-  --text-sub: #848484;
-  --text-link: #c2c2c2;
+    /* Button (second) */
+    --zui-btn-second-bg: #eee;
+    --zui-btn-second-fg: #151515;
+    --zui-btn-second-bg-hover: #d8d8d8;
 
-  --font: "Inter", sans-serif;
+  /* Text */
+  --zui-fg-primary: #eee;
+  --zui-fg-muted: rgba(255, 255, 255, 0.45);
+
+  /* Border Radius */
+  --zui-br-4: 4px;
+  --zui-br-8: 8px;
+  --zui-br-16: 16px;
+  --zui-br-24: 24px;
+
+  /* Fonts */
+  --zui-font-primary: "Inter", sans-serif;
+  --zui-font-mono: "JetBrains Mono", monospace;
+  --zui-font-icon: FontAwesome;
 }
 
-html,
-body {
-  scrollbar-color: var(--scrollbar-track) var(--scrollbar-thumb) !important;
-  scrollbar-width: thin !important;
+button,
+select,
+option,
+input {
+  outline: 0 !important;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box !important;
-  transition: 0.3s color ease-in-out, 0.3s background-color ease-in-out,
-    0.3s border ease-in-out, 0.3s display ease-in-out !important;
+  transition: 0.2s color ease-in-out, 0.2s fill ease-in-out,
+    0.2s border ease-in-out, 0.2s border-color ease-in-out,
+    0.2s background-color ease-in-out, 0.2s display ease-in-out !important;
+}
+
+html {
+  scrollbar-color: var(--zui-box-8) var(--zui-box-0) !important;
+  scrollbar-width: thin !important;
 }
