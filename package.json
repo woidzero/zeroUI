@@ -1,0 +1,8 @@
+{
+    "name": "zeroui",
+    "version": "1.0.0",
+    "description": "🎨 Lightweight UI toolkit for my userstyles",
+    "homepage": "https://github.com/woidzero/zeroUI",
+    "author": "woidzero",
+    "license": "MIT"
+}

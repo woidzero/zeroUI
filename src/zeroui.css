@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/*
+zeroUI
+🎨 Lightweight UI toolkit for my userstyles 
+
+license: MIT
+author: woidzero
+github: https://github.com/woidzero/zeroUI
+version: 1.0.0
+*/
+@import url("https://api.fonts.coollabs.io/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+:root {
+  /* Boxes */
+  /* Box (default) */
+  --zui-box-0: #090909;
+  --zui-box-1: #0e0e0e;
+  --zui-box-2: #151515;
+  --zui-box-3: #1e1e1e;
+  --zui-box-4: #202020;
+  --zui-box-5: #2d2d2d;
+  --zui-box-6: #3d3d3d;
+  --zui-box-7: #4f4f4f;
+  --zui-box-8: #666666;
+  /* Box (info) */
+  --zui-info: #51a0d4;
+  --zui-info-box: rgba(77, 139, 255, 0.1);
+  /* Box (success) */
+  --zui-success: #51dd56;
+  --zui-success-box: rgba(71, 187, 75, 0.1);
+  /* Box (error) */
+  --zui-error: #da3f3f;
+  --zui-error-box: rgba(255, 68, 68, 0.1);
+  /* Box (warn) */
+  --zui-warn: #ffdf52;
+  --zui-warn-box: rgba(255, 200, 48, 0.1);
+  /* Buttons */
+  /* Button (primary) */
+  --zui-btn-primary-bg: #151515;
+  --zui-btn-primary-br: #3d3d3d;
+  --zui-btn-primary-fg: #eee;
+  --zui-btn-primary-bg-hover: #1a1a1a;
+  --zui-btn-primary-br-hover: #666666;
+  /* Button (second) */
+  --zui-btn-second-bg: #eee;
+  --zui-btn-second-fg: #151515;
+  --zui-btn-second-bg-hover: #d8d8d8;
+  /* Text */
+  --zui-fg-primary: #eee;
+  --zui-fg-muted: rgba(255, 255, 255, 0.45);
+  /* Border Radius */
+  --zui-br-4: 4px;
+  --zui-br-8: 8px;
+  --zui-br-16: 16px;
+  --zui-br-24: 24px;
+  /* Fonts */
+  --zui-font-primary: "Inter", sans-serif;
+  --zui-font-mono: "JetBrains Mono", monospace;
+  --zui-font-icon: FontAwesome;
+}
+
+body,
+html {
+  background-color: var(--zui-box-0) !important;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box !important;
+  transition: 0.3s color ease-in-out, 0.3s fill ease-in-out, 0.3s stroke ease-in-out, 0.3s border ease-in-out, 0.3s outline ease-in-out, 0.3s background ease-in-out !important;
+}
+
+html,
+* {
+  scrollbar-color: var(--zui-box-6) var(--zui-box-0) !important;
+  scrollbar-width: thin !important;
+}
