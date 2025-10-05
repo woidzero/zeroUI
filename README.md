@@ -7,7 +7,7 @@
 ### jsDelivr
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/woidzero/zeroUI/src/zeroui.min.css');
+@import url('https://cdn.jsdelivr.net/gh/woidzero/zeroUI@master/src/zeroui.min.css');
 ```
 
 ## License
